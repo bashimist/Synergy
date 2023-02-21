@@ -1,5 +1,5 @@
 /*
-
+https://github.com/bashimist/Synergy/blob/main/Programming%20technology%20s1/HW2.6.cpp
 */
 
 #include <stdio.h>
