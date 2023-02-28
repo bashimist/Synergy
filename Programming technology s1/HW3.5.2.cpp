@@ -13,7 +13,7 @@ main()
 		i=i+1;
 	}
 	printf("\n");
-	int a=2;
+	int a=1;
 	while(a<16)
 	{
 		printf("%i ",a);
