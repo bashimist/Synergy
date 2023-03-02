@@ -1,5 +1,5 @@
 /*
-
+https://github.com/bashimist/Synergy/blob/main/Programming%20technology%20s1/HW3.8.cpp
 */
 #include <stdio.h>
 #define N 4
@@ -20,10 +20,6 @@ main()
 		printf("[%i] -> ", i);
 		scanf("%i",&arr[i]);
 	}
-	/*for (i = 0; i < n; i++)
-	{
-		printf("%i \n", arr[i]);
-	}*/
 	sum = 0;
 	for(i = 0; i<n; i++)
 	{
