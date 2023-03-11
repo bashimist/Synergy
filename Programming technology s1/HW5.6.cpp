@@ -58,17 +58,11 @@ main()
 		printf("\n\n");
 	}
 	
-	int g;
-	int t;
-	for(int i=0;i<m;i++)
+	for (int j = 0; j < m; ++j)
 	{
-		for(int j=0;j<n;j++)
-		{
-		t=mas[i][j];
-		mas[i][j]=mas[m-1][j];
-		mas[m-1][j]=t;
-		}
-		
+	   const int temp = mas[0][j];
+	   mas[0][j] = mas[m-1][j];
+	   mas[m-1][j] = temp;
 	}
 		
 	printf("\n\n\n\n");
