@@ -57,4 +57,27 @@ main()
 		}
 		printf("\n\n");
 	}
+	
+	int t;
+	for(int i=0;i<m;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+		t=mas[i][j];
+		mas[i][j]=mas[m-1][j];
+		mas[m-1][j]=t;
+		}
+	}
+	
+	
+	printf("\n\n\n\n");
+	
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<m;j++)
+		{
+			printf("%3d",mas[j][i]);
+		}
+		printf("\n\n");
+	}
 }
