@@ -34,20 +34,27 @@ main()
 			while(fl)
 			{
 				fl=false;
-				for(int i=0;i<n-1;i++)
+				for(int i=0;i<m-1;i++)
 				{
-					if(mas[i]>mas[i+1])
+					if(mas[i][j]>mas[i+1][j])
 					{
-						int z=mas[i];
-						mas[i]=mas[i+1];
-						mas[i+1]=z;
+						int z=mas[i][j];
+						mas[i][j]=mas[i+1][j];
+						mas[i+1][j]=z;
 						fl=true;
 					}
 				}
 				ch++;
-			printf("%7i",mas[j][i]);
 			}
-		printf("\n\n");
 		}
+	}
+	
+	for(int i=0;i<m;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			printf("%3d",mas[j][i]);
+		}
+		printf("\n\n");
 	}
 }
