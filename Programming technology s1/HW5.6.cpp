@@ -58,6 +58,7 @@ main()
 		printf("\n\n");
 	}
 	
+	int g;
 	int t;
 	for(int i=0;i<m;i++)
 	{
@@ -67,9 +68,9 @@ main()
 		mas[i][j]=mas[m-1][j];
 		mas[m-1][j]=t;
 		}
+		
 	}
-	
-	
+		
 	printf("\n\n\n\n");
 	
 	for(int i=0;i<n;i++)
