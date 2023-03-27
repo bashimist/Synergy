@@ -3,7 +3,7 @@
 */
 #include <stdio.h>
 
-void sum(int q)
+void sum(int q)/*
 {
 	int w, e, x, y;
 	scanf("%d", &x);
@@ -24,11 +24,19 @@ void sum(int q)
   	
   	printf("%d", e);
   	return; 
+}*/
+{
+	int i;
+	scanf("%d";&i);
+	for (i = 0; i < number / 2; i++)
+        if (i * i == number) 
+		{
+		return 1;
+        }
 }
-
 main()
 {
-	int q,w,e;
+	int q;
 	printf("Num: ");
 	sum(q);
 }
