@@ -38,12 +38,12 @@ void space(char *arr,int n)
 	printf("Enter your new string: ");
 	gets(arr);
 	printf("Result without spaces: ");
+	
 	int space = 0;
 	int k = 0;
-	
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < strlen(arr); i++)
 	{
-		while (k == 0 && i < n && arr[i] == ' ') 
+		while (k == 0 && i < strlen(arr) && arr[i] == ' ') 
 		{
 			i++;
 		}
@@ -55,7 +55,8 @@ void space(char *arr,int n)
 				space = 1;
 			}
 		}
-		else {
+		else 
+		{
 			arr[k++] = arr[i];
 			space = 0;
 		}
@@ -68,6 +69,7 @@ main()
 
 	str();
 	printf("\n\n");
+	
 	char arr[100];
 	space(arr,strlen(arr));
 	printf("%s", arr);
